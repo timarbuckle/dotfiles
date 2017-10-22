@@ -1,0 +1,46 @@
+[user]
+    name = Tim Arbuckle
+    email = timarbuckle@gmail.com
+[core]
+    editor = vim
+    pager = less -r
+[color]
+    ui = true
+    diff = true
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[alias]
+    cp = cherry-pick
+    st = status -s
+    cl = clone
+    ci = commit
+    co = checkout
+    br = branch
+    diff = diff --word-diff
+    dc = diff --cached
+    r = reset
+    r1 = reset HEAD^
+    r2 = reset HEAD^^
+    rh = reset --hard
+    rh1 = reset HEAD^ --hard
+    rh2 = reset HEAD^^ --hard
+    sl = stash list
+    sa = stash apply
+    ss = stash save
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    # list no color for pipe to other commands
+    lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+    # diff last commit
+    dlc = diff --cached HEAD^
+    # list all aliases
+    la = "!git config -l | grep alias | cut -c 7-"
+[push]
+    default = simple
+[pull]
+    #rebase = true
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
