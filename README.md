@@ -2,6 +2,7 @@ New Vim config using Vundle for bundle management
 
 # Initial Setup
 
+    # run setup.sh
     cd bundle
     git clone https://github.com/VundleVim/Vundle.vim.git
 
