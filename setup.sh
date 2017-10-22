@@ -3,7 +3,7 @@
 function link_file()
 {
     if [ -e "$1" ]; then
-	mkdir -p ~/dotfiles_backup
+    mkdir -p ~/dotfiles_backup
         cp "$1" ~/dotfiles_backup/
         rm "$1"
     fi
