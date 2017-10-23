@@ -2,7 +2,8 @@ New Vim config using Vundle for bundle management
 
 # Initial Setup
 
-    # run setup.sh
+    ./setup.sh
+    mkdir bundle
     cd bundle
     git clone https://github.com/VundleVim/Vundle.vim.git
 
