@@ -8,20 +8,19 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
-"Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-erlang/vim-erlang-runtime'
 "Plugin 'vim-erlang/vim-erlang-compiler'
 Plugin 'scrooloose/nerdtree'
-
 Plugin 'elzr/vim-json'
 "Plugin 'klen/python-mode'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-git'
 "Plugin 'tpope/vim-surround'
+Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()            " required
 
@@ -106,6 +105,15 @@ set gdefault
 nnoremap ; :
 "nnoremap / /\v
 "vnoremap / /\v
+
+" quicker vim window navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
+
 set grepprg=ack\ --column
 set grepformat=%f:%l:%c:%m
 
