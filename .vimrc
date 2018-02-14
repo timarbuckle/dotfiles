@@ -81,7 +81,8 @@ if has('gui_running')
 "else
 endif
 
-:colorscheme lightning
+:colorscheme mushroom
+":colorscheme lightning
 ":colorscheme blackboard
 ":colorscheme mustang
 ":colorscheme atom
